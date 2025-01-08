@@ -1,7 +1,6 @@
 {
   "name": "test-oddity",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
@@ -16,6 +15,7 @@
     "sass": "^1.83.1"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.3"
+    "@parcel/transformer-sass": "^2.13.3",
+    "svgo": "^3.3.2"
   }
 }
