@@ -6,6 +6,34 @@
   height: 48px;
   margin-top: 10px;
 
+  @include width-small {
+    height: 40px;
+
+    &__nav-item {
+      font-size: 11px;
+    }
+
+    &__login {
+      font-size: 12px;
+      height: 36px;
+      width: 75px;
+    }
+  }
+
+  @include width-medium {
+    height: 45px;
+
+    &__nav-item {
+      font-size: 12px;
+    }
+
+    &__login {
+      font-size: 13px;
+      height: 38px;
+      width: 80px;
+    }
+  }
+
   &__navigation {
     display: flex;
     gap: 15px;
@@ -74,12 +102,28 @@
 }
 
 .dots {
-    position: relative;
-    width: 4px;
-    height: 4px;
-    background: $text-main;
-    border-radius: 50%;
-    box-shadow: 6px 0 0 $text-main, 12px 0 0 $text-main,
-            0 6px 0 $text-main, 6px 6px 0 $text-main, 12px 6px 0 $text-main,
-            0 12px 0 $text-main, 6px 12px 0 $text-main, 12px 12px 0 $text-main;
+  position: relative;
+  width: 4px;
+  height: 4px;
+  background: $text-main;
+  border-radius: 50%;
+  box-shadow: 6px 0 0 $text-main, 12px 0 0 $text-main, 0 6px 0 $text-main,
+    6px 6px 0 $text-main, 12px 6px 0 $text-main, 0 12px 0 $text-main,
+    6px 12px 0 $text-main, 12px 12px 0 $text-main;
+
+  @include width-small {
+    width: 3px; 
+    height: 3px;
+    box-shadow: 5px 0 0 $text-main, 10px 0 0 $text-main, 0 5px 0 $text-main,
+      5px 5px 0 $text-main, 10px 5px 0 $text-main, 0 10px 0 $text-main,
+      5px 10px 0 $text-main, 10px 10px 0 $text-main;
   }
+
+  @include width-medium {
+    width: 3.5px;
+    height: 3.5px;
+    box-shadow: 5.5px 0 0 $text-main, 11px 0 0 $text-main, 0 5.5px 0 $text-main,
+      5.5px 5.5px 0 $text-main, 11px 5.5px 0 $text-main, 0 11px 0 $text-main,
+      5.5px 11px 0 $text-main, 11px 11px 0 $text-main;
+  }
+}

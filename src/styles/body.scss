@@ -9,6 +9,12 @@
     width: 400px;
     height: 92px;
     margin: 0 auto;
+    
+    @include width-small {
+      display: block;
+      width: 200px;
+      height: 50px;
+    }
   }
 
   &__form {
@@ -16,6 +22,10 @@
     position: relative;
     max-width: 470px;
     width: 100%;
+
+    @include width-small {
+      max-width: 320px;
+    }
   }
 
   &__search-input {
@@ -24,6 +34,11 @@
     padding: 0 50px;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
+
+    @include width-small {
+      height: 36px; 
+      padding: 0 30px; 
+    }
   }
 
   .icon {
@@ -32,14 +47,24 @@
     height: 20px;
     top: 20%;
     transform: translateY(-50%);
+
+    @include width-small {
+      width: 18px; 
+      height: 18px;
+    }
   }
 
   &__button-wrapper {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
     margin-top: 30px;
+
+    @include width-small {
+      gap: 6px; 
+      margin-top: 20px;
+    }
   }
 
   &__button {
@@ -47,6 +72,10 @@
     color: $text-main;
     border: none;
     padding: 7px 16px;
+
+    @include width-small {
+      padding: 5px 12px; 
+    }
   }
 
   &__glass {
@@ -62,7 +91,7 @@
   }
 
   &__img {
-    right: 5px;
+    right: 10px;
   }
 
   &__lang {
@@ -72,9 +101,18 @@
     background-color: $back;
     color: $text-main;
     font-size: 12px;
+
+    @include width-small {
+      font-size: 10px; 
+      padding: 5px 10px;
+    }
   }
 
   &__link {
     color: $link;
+
+    @include width-small {
+      font-size: 12px; 
+    }
   }
 }
