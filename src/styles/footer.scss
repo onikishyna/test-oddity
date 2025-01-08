@@ -1,0 +1,39 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $back;
+    color: $text-main;
+ 
+    &__1 {
+        padding: 10px 30px;
+        border-bottom: 0.8px solid $border;
+        font-size: 14px;
+        font-weight: 400;
+    }
+ 
+    &__2 {
+        padding: 10px 17px;
+    }
+ 
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+    &__nav-list {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+ 
+    &__nav-link {
+        text-decoration: none;
+        color: $text-main;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 10px 15px;
+    }
+ }

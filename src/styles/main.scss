@@ -1,5 +1,9 @@
 @import "./variables";
 @import "./mixins";
+@import './header';
+@import './body';
+@import './footer';
+
 
 body {
   font-family: Arial, sans-serif;
